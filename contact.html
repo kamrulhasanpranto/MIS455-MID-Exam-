@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechPro Solutions - Products</title>
+    <title>TechPro Solutions - Contact Us</title>
     <link rel="stylesheet" href="pranto.css">
 </head>
 <body>
@@ -21,34 +21,33 @@
     </header>
 
     <main>
-        <h2>Our Featured Catalog</h2>
-        <p>Browse through our premium hardware item collection carefully chosen by engineering professionals for maximum performance reliability.</p>
-        <p>All items listed here come out-of-the-box pre-configured, tested systematically against heating overhead thresholds, and are ready for performance delivery deployment right away.</p>
+        <div class="contact-section">
+            <h2>Get In Touch With Our Staff</h2>
+            <p>Have questions regarding configuration compatibilities or custom orders? Reach our help center through the contact desk interface below.</p>
+            <p>Our backend technical tracking unit typically reads, audits, logs, and answers submissions within a solid window frame of 3 standard working hours.</p>
+            <br>
 
-        <div class="products-grid-container">
-            <div class="product-card">
-                <img src="https://picsum.photos/300/200?random=2" alt="Premium Laptop Rig">
-                <h3>Quantum Elite Laptop</h3>
-                <p>High-end machine optimized for deep coding tasks and AI models.</p>
-                <p><strong>Price: Tk 85,000</strong></p>
+            <div class="form-group">
+                <label for="usrName">Your Full Name:</label>
+                <input type="text" id="usrName" placeholder="Enter name here">
             </div>
-            <div class="product-card">
-                <img src="https://picsum.photos/300/200?random=3" alt="Wireless Audio Headset">
-                <h3>Studio Sound Pro</h3>
-                <p>Active noise cancelling headphones built with acoustic depth elements.</p>
-                <p><strong>Price: Tk 12,500</strong></p>
+            <div class="form-group">
+                <label for="usrEmail">Email Address:</label>
+                <input type="email" id="usrEmail" placeholder="name@example.com">
             </div>
-            <div class="product-card">
-                <img src="https://picsum.photos/300/200?random=4" alt="Mechanical Keyboard Grid">
-                <h3>Matrix Mechanic Click</h3>
-                <p>RGB tactical customizable tactile setup for rapid workspace typists.</p>
-                <p><strong>Price: Tk 6,200</strong></p>
+            <div class="form-group">
+                <label for="usrMsg">Message details:</label>
+                <textarea id="usrMsg" rows="5" placeholder="Write your message here..."></textarea>
             </div>
+            
+            <button onclick="handleFormSubmission()">Send Support Ticket</button>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2026 TechPro Electronics Store. All Rights Reserved. Designed by Kamrul Hasan Pranta.</p>
     </footer>
+
+    <script src="pranto.js"></script>
 </body>
 </html>
